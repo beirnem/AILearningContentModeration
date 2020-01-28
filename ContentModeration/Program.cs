@@ -19,8 +19,8 @@ namespace ContentModeration
 
         static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("CONTENT_MODERATOR_ENDPOINT", "https://aicertcontentmoderatortutorial.cognitiveservices.azure.com/");
-            Environment.SetEnvironmentVariable("CONTENT_MODERATOR_SUBSCRIPTION_KEY", "2e84cf22ed5e42d99689ea32b33c5ec8");
+            Environment.SetEnvironmentVariable("CONTENT_MODERATOR_ENDPOINT", "xxxxxx");
+            Environment.SetEnvironmentVariable("CONTENT_MODERATOR_SUBSCRIPTION_KEY", "xxxxxx");
             // Moderate text from text in a file
             ModerateText(TextFile, TextOutputFile);
         }
