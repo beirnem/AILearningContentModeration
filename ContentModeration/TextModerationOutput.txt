@@ -1,0 +1,70 @@
+Autocorrect typos, check for matching terms, PII, and classify.
+{
+  "OriginalText": "Is this a smexy email abcdef123@abcd.com, phone: 4255550111, IP: 255.255.255.255, 1234 Main Boulevard, Panapolis WA 96555. Crap is the profanity here. Is this information PII? phone 4255550111",
+  "NormalizedText": "   smexy email abcdef123@abcd.com, phone: 4255550111, IP: 255.255.255.255, 1234 Main Boulevard, Panapolis WA 96555. Crap   profanity .   information PII? phone 4255550111",
+  "AutoCorrectedText": "Is this a sexy email abcdef123@abcd.com, phone: 4255550111, IP: 255.255.255.255, 1234 Main Boulevard, Pentapolis WA 96555. Crap is the profanity here. Is this information PII? phone 4255550111",
+  "Misrepresentation": null,
+  "Classification": {
+    "Category1": {
+      "Score": 0.002985818311572075
+    },
+    "Category2": {
+      "Score": 0.18468093872070312
+    },
+    "Category3": {
+      "Score": 0.9879999756813049
+    },
+    "ReviewRecommended": true
+  },
+  "Status": {
+    "Code": 3000,
+    "Description": "OK",
+    "Exception": null
+  },
+  "PII": {
+    "Email": [
+      {
+        "Detected": "abcdef123@abcd.com",
+        "SubType": "Regular",
+        "Text": "abcdef123@abcd.com",
+        "Index": 22
+      }
+    ],
+    "SSN": [],
+    "IPA": [
+      {
+        "SubType": "IPV4",
+        "Text": "255.255.255.255",
+        "Index": 65
+      }
+    ],
+    "Phone": [
+      {
+        "CountryCode": "US",
+        "Text": "4255550111",
+        "Index": 49
+      },
+      {
+        "CountryCode": "US",
+        "Text": "4255550111",
+        "Index": 182
+      }
+    ],
+    "Address": [
+      {
+        "Text": "1234 Main Boulevard, Panapolis WA 96555",
+        "Index": 82
+      }
+    ]
+  },
+  "Language": "eng",
+  "Terms": [
+    {
+      "Index": 116,
+      "OriginalIndex": 123,
+      "ListId": 0,
+      "Term": "crap"
+    }
+  ],
+  "TrackingId": "NEU_ibiza_0f03dd11-bec6-4048-bbeb-da6953691acb_ContentModerator.F0_fe578e95-e1b4-4019-bb46-25d8b03fd76c"
+}
